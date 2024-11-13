@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ChatBot{% endblock %}</title>
+    {% load static %}
+    <link rel="shortcut icon" href=" {% static 'images/logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}" class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'register' %}">Register</a>
+                </li>
+                <li>
+                    <a href="{% url 'login' %}">Login</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </li>
+                <li>
+                    <a href="{% url 'chat' %}">Chat</a>
+                </li>
+                <li>
+                    <a href="{% url 'tokens' %}">Tokens</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- {% block content %}{% endblock %} -->
+        <div>
+            <p>Welcome to My ChatBot</p>
+            <img src="{% static 'images/logo.png' %}" alt="">
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+            </div>
+            <div class="links">
+                <a class="git" href="https://github.com/Estoda" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="linkedin" href="https://www.linkedin.com/in/ahmed-amin-b9393a26a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="x" href="https://x.com/AhmedAmin82253" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+        </div>
+        <p>&copy: 2024 Ahmed Amin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    background-color: white;
+    position:fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo img{
+    width:72px;
+    height: 72px;
+    transition:0.3s;
+}
+header .logo:hover img{
+    transform:scale(1.2);
+}
+
+header ul{
+    display:flex;
+}
+header ul>li>a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:72px;
+    position:relative;
+    color:black;
+    padding:0 30px;
+    transition:0.3s;
+    overflow:hidden;
+}
+
+header ul>li>a::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    background-color:#4d4d4d;
+    bottom:0;
+    left:-100%;
+    transition:0.3s;
+}
+header ul>li>a:hover::before{
+    left:0;
+}
+
+main{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main div{
+    font-weight: bold;
+    font-size: 40px;
+    padding:50px;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+    display: flex;
+    color:#191919;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer{
+    background-color:#191919;
+    color:white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .links{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .links a{
+    color:white;
+    padding:10px;
+    background-color: transparent;
+    margin: 0 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+footer .links a.git:hover{
+    color:#191919;
+    background-color: white;
+}
+
+footer .links a.git:hover{
+    color:#191919;
+    background-color: white;
+}
+footer .links a.linkedin:hover{
+    color:#0b66c3;
+    background-color: white;
+}
+footer .links a.x:hover{
+    color:#191919;
+    background-color: white;
+}
+
+footer .links i{
+    font-size:50px;
+    transition:0.3s;
+}
+
+footer .logo img{
+    width:100px;
+    height: 100px;
+    transition:0.3s;
+}
+footer .logo:hover img{
+    transform:scale(1.2);
+}
